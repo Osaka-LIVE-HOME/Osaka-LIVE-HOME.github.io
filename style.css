@@ -1,124 +1,246 @@
-@keyframes fadein{
+@keyframes fadein {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
-    
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
 
-body{
+body {
     background-color: black;
 }
 
-.l-section p-topNews{
-  position: absolute;
-  top: 35%;
-  left:  44%;
-}
-.title{
-    color:rgb(233, 227, 227);
-    font-family: 'Mongolian Baiti',sans-serif;
+#logo {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    left: 31%;
+    top: 20%
 }
 
-.sabtitle{
-    color:rgb(233, 227, 227);
-    font-family: 'Mongolian Baiti',sans-serif;
+.l-section {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    z-index: 0;
 }
 
-ol.news{
-    counter-reset:list;
-    list-style-type:none;
-    position:relative;
-    font: 14px/1.6 ;
+.record_title {
+    color: rgb(233, 227, 227);
+    font-family: 'Mongolian Baiti', sans-serif;
+}
+
+.sabtitle {
+    color: rgb(233, 227, 227);
+    font-family: 'Mongolian Baiti', sans-serif;
+}
+
+ol.news {
+    counter-reset: list;
+    list-style-type: none;
+    position: relative;
+    font: 14px/1.6;
     /* 'Mv Boli', 'arial narrow', sans-serif; */
-    font-family: 'Mongolian Baiti',sans-serif;
+    font-family: 'Mongolian Baiti', sans-serif;
     padding: 1.2em;
     /* background:#F2EFE7; */
-    background:#111110;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset,0 0 4px rgba(0, 0, 0, 0.2) ;
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset,0 0 4px rgba(0, 0, 0, 0.2) ;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset,0 0 4px rgba(0, 0, 0, 0.2) ;
-    width:95%;
-  }
-  ol.news:after{
+    background: #111110;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset, 0 0 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset, 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset, 0 0 4px rgba(0, 0, 0, 0.2);
+    width: 95%;
+}
+
+ol.news:after {
     /* content:"list-sample";   */
     position: absolute;
     bottom: 8px;
     right: 1.2em;
-    font-size:12px;
-    color:#bbb;
-  }
-  ol.news li{
-    position:relative;
+    font-size: 12px;
+    color: #bbb;
+}
+
+ol.news li {
+    position: relative;
     padding: 7px 5px 7px 50px;
     margin: 7px 0 10px 0px;
     font-weight: bold;
-    font-size:14px;
-    border-bottom:dashed 1px #ccc;
+    font-size: 14px;
+    border-bottom: dashed 1px #ccc;
     /* color:#333; */
-    color:rgb(233, 227, 227);
-  }
-  ol.news li:first-child{
-    margin-top:0;
-  }
-  ol.news li:last-child{
-    margin-bottom:20px;
-  }
-  ol.news li:before{
+    color: rgb(233, 227, 227);
+}
+
+ol.news li:first-child {
+    margin-top: 0;
+}
+
+ol.news li:last-child {
+    margin-bottom: 20px;
+}
+
+ol.news li:before {
     counter-increment: list;
     content: counter(list) ",";
     position: absolute;
     left: 15px;
-    font-size:1.2em;
-     top: 50%;
+    font-size: 1.2em;
+    top: 50%;
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+}
 
-  .c-newsList__item:hover {
+.c-newsList__item:hover {
     /* background-size: 1% 1%;  */
-    background-color:rgb(138, 26, 26);
+    background-color: rgb(138, 26, 26);
     animation: fadein 1s forwards;
+}
 
-  }
-  header {
+header {
     display: flex;
     width: 100%;
     height: 15%;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(17, 15, 15, 0.884);
     align-items: center;
     position: fixed;
-  }
+}
 
-  body{background-color: #00000069; }
-    
-   
-  p {
+
+/* p {
     padding: 130px 0px;
     height: 500px;
-  }
-   
-  .title {
-    position:absolute;
+  } */
+
+.title {
+    position: absolute;
     top: 35%;
-    left:  44%;
-    color: rgb(255, 255, 255);             
-    font-family: 'Mongolian Baiti',sans-serif;
-  }
-   
-  .menu-item {
+    left: 44%;
+    color: rgb(255, 255, 255);
+    font-family: 'Mongolian Baiti', sans-serif;
+}
+
+.menu-item {
     list-style: none;
     display: inline-block;
     padding: 10px;
-  }
+}
 
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+.menu-btn {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    display: flex;
+    height: 60%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+    /*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #0000003f;
+}
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    /*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: rgb(138, 26, 26);
+    transition: all 0.5s;
+    /*アニメーション設定*/
+}
+
+#menu-btn-check:checked~.menu-content {
+    left: 0;
+    /*メニューを画面内へ*/
 }
